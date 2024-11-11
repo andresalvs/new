@@ -1,7 +1,7 @@
-// components/Loading.tsx
-import { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react'; // Added React import
 
-const Loading: React.FC = () => {
+const Loading: React.FC = React.memo(() => {
+  // Wrapped the component in React.memo
   const [fadeOut, setFadeOut] = useState(false);
 
   // Trigger fade-out effect after the minimum duration
@@ -19,6 +19,6 @@ const Loading: React.FC = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Loading;

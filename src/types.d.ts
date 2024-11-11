@@ -1,9 +1,8 @@
-// Modules
-
 declare module '*.jpg' {
   const value: string;
   export default value;
 }
+
 declare module '*.webp' {
   const value: string;
   export default value;
@@ -29,9 +28,8 @@ declare module '*.mp4' {
   export default value;
 }
 
-// src/types/scrollreveal.d.ts
 declare module 'scrollreveal' {
-  const ScrollReveal: any;
+  import {ScrollReveal} from 'scrollreveal';
+
   export default ScrollReveal;
 }
-

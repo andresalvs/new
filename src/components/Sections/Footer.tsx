@@ -1,5 +1,5 @@
-import { FC, memo, useEffect } from 'react';
-import { SectionId } from '../../data/data';
+import {FC, memo, useEffect} from 'react';
+import {SectionId} from '../../data/data';
 import Socials from '../Socials';
 
 const currentYear = new Date().getFullYear();
@@ -60,9 +60,7 @@ const Footer: FC = memo(() => {
         <div className="footer-socials flex gap-x-4 text-neutral-100">
           <Socials />
         </div>
-        <div className="footer-copyright text-neutral-400">
-          &copy; {currentYear} Your Company. All rights reserved.
-        </div>
+        <div className="footer-copyright text-neutral-400">&copy; {currentYear} Your Company. All rights reserved.</div>
       </div>
     </div>
   );

@@ -1,36 +1,33 @@
-import { useEffect } from 'react';
+import React, {useEffect} from 'react';
 import classNames from 'classnames';
 import Image from 'next/image';
-import { portfolioItems, SectionId } from '../../data/data';
+import {portfolioItems, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 
-const Portfolio: React.FC = () => {
+const Portfolio: React.FC = React.memo(() => {
   useEffect(() => {
     (async () => {
       if (typeof window !== 'undefined') {
-        // Use dynamic import to handle module default export correctly
         const ScrollReveal = (await import('scrollreveal')).default;
-
         if (ScrollReveal) {
           const sr = ScrollReveal();
 
-          // Reveal for heading
           sr.reveal('.portfolio-heading', {
-            duration: 1000,
-            distance: '40px',
-            origin: 'top',
-            easing: 'ease-in-out',
-            reset: true,
             delay: 100,
+            distance: '40px',
+            duration: 1000,
+            easing: 'ease-in-out',
+            origin: 'top',
+            reset: true,
           });
 
-          // Reveal for each portfolio item
           sr.reveal('.portfolio-item', {
-            duration: 1200,
+            delay: 0,
             distance: '50px',
-            origin: 'bottom',
-            interval: 150,
+            duration: 1200,
             easing: 'ease-in-out',
+            interval: 150,
+            origin: 'bottom',
             reset: true,
           });
         }
@@ -46,15 +43,14 @@ const Portfolio: React.FC = () => {
         </h2>
         <div className="w-full columns-2 md:columns-3 lg:columns-4">
           {portfolioItems.map((item, index) => {
-            const { title, image } = item;
+            const {title, image} = item;
             return (
-              <div className="pb-6 portfolio-item" key={`${title}-${index}`}>
+              <div className="portfolio-item pb-6" key={`${title}-${index}`}>
                 <div
                   className={classNames(
-                    'relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
+                    'relative w-full h-max overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
                   )}>
-                  <Image alt={title} className="h-full w-full" placeholder="blur" src={image} />
-                  {/* Add additional item details if needed */}
+                  <Image alt={title} className="w-full h-full" placeholder="blur" src={image} />
                 </div>
               </div>
             );
@@ -63,6 +59,6 @@ const Portfolio: React.FC = () => {
       </div>
     </Section>
   );
-};
+});
 
 export default Portfolio;

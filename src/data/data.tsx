@@ -39,14 +39,13 @@ import {
   TimelineItem,
 } from './dataDef';
 
-
 /**
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Andre Salvador | Portfolio',
   description: "Example site built with Tim Baker's react resume template",
-}
+};
 
 /**
  * Section definition
@@ -60,9 +59,9 @@ export const SectionId = {
   Skills: 'skills',
   Stats: 'stats',
   Testimonials: 'testimonials',
-} as const
+} as const;
 
-export type SectionId = (typeof SectionId)[keyof typeof SectionId]
+export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 
 /**
  * Hero section
@@ -89,7 +88,7 @@ export const heroData: Hero = {
       primary: false,
     },
   ],
-}
+};
 
 /**
  * About section
@@ -105,7 +104,7 @@ export const aboutData: About = {
     {label: 'Study', text: 'Caraga State University', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Dynamic Freelance', Icon: BuildingOffice2Icon},
   ],
-}
+};
 
 /**
  * Skills section
@@ -143,7 +142,7 @@ export const skills: SkillGroup[] = [
       {name: 'Cinematography', level: 9},
     ],
   },
-]
+];
 
 /**
  * Portfolio section
@@ -197,7 +196,7 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://www.facebook.com/retrofilmvibes/posts/pfbid037fc1WRy3jvm2ayET8LgmKXCunbBfvF6QWKtScDBhkJw5MQa6aQfYvYRUeuvddB3ql',
     image: porfolioImage11,
   },
-]
+];
 
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
@@ -227,7 +226,7 @@ export const education: TimelineItem[] = [
       </p>
     ),
   },
-]
+];
 
 export const experience: TimelineItem[] = [
   {
@@ -254,7 +253,7 @@ export const experience: TimelineItem[] = [
       </p>
     ),
   },
-]
+];
 
 /**
  * Testimonial section
@@ -278,7 +277,7 @@ export const testimonial: TestimonialSection = {
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
   ],
-}
+};
 
 /**
  * Contact section
@@ -309,7 +308,7 @@ export const contact: ContactSection = {
       href: 'https://github.com/andresalvs',
     },
   ],
-}
+};
 
 /**
  * Social items
@@ -319,4 +318,4 @@ export const socialLinks: Social[] = [
   {label: 'Facebook', Icon: FacebookIcon, href: 'https://www.facebook.com/andreeeofficial'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/andreeeofficial/'},
   {label: 'Twitter', Icon: TwitterIcon, href: 'https://x.com/andreeeofficial'},
-]
+];

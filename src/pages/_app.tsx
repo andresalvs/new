@@ -1,12 +1,13 @@
 import 'tailwindcss/tailwind.css';
 import '../globalStyles.scss';
 
-import type { AppProps } from 'next/app';
-import { memo, useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
+import type {AppProps} from 'next/app';
+import {memo, useEffect, useState} from 'react';
+import {useRouter} from 'next/router';
+
 import Loading from '../components/Loading';
 
-const MyApp = memo(({ Component, pageProps }: AppProps): JSX.Element => {
+const MyApp = memo(({Component, pageProps}: AppProps): JSX.Element => {
   const [loading, setLoading] = useState(true);
   const router = useRouter();
 

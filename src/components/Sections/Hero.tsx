@@ -1,13 +1,12 @@
-import { ChevronDownIcon } from '@heroicons/react/24/outline';
-import classNames from 'classnames';
+import {ChevronDownIcon} from '@heroicons/react/24/outline';
 import Image from 'next/image';
-import { FC, memo, useEffect } from 'react';
-import { heroData, SectionId } from '../../data/data';
+import {FC, memo, useEffect} from 'react';
+import {heroData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 import Socials from '../Socials';
 
 const Hero: FC = memo(() => {
-  const { imageSrc, name, description, actions } = heroData;
+  const {imageSrc, name, description} = heroData;
 
   useEffect(() => {
     (async () => {
@@ -77,9 +76,7 @@ const Hero: FC = memo(() => {
             <div className="hero-socials flex gap-x-4 text-neutral-100">
               <Socials />
             </div>
-            <div className="hero-actions flex flex-wrap gap-x-4">
-              {/* Render action buttons here */}
-            </div>
+            <div className="hero-actions flex flex-wrap gap-x-4">{/* Render action buttons here */}</div>
             <div className="scroll-down">
               <ChevronDownIcon className="h-8 w-8 animate-bounce text-white" />
             </div>
