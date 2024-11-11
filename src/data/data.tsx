@@ -264,17 +264,17 @@ export const testimonial: TestimonialSection = {
     {
       name: 'Glaiza Domine',
       text: "Working with Andre Salvador has completely transformed our project. The insights and creative solutions provided were beyond our expectations. It felt like having an expert team member who was always available, responsive, and eager to help. Our outcomes improved significantly, and I couldn't be happier with the collaboration!",
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      image: 'https://tixwibgexlqwgogwyovb.supabase.co/storage/v1/object/public/cv-portfolio/glaiza.jpg?t=2024-11-11T12%3A52%3A59.794Z',
     },
     {
       name: 'Kurt Reserva',
       text: "Collaborating with Andre Salvador was a game-changer for our team. The ability to brainstorm ideas and get instant feedback made our creative process so much smoother. It's like having a brainstorming partner that never runs out of ideas. I appreciated how it kept us on track and helped us elevate our work to the next level!",
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      image: 'https://tixwibgexlqwgogwyovb.supabase.co/storage/v1/object/public/cv-portfolio/kort.jpg?t=2024-11-11T12%3A53%3A16.840Z',
     },
     {
       name: 'Joshua Villamor',
       text: "As a manager, I value efficiency and innovation, and Andre Salvador delivered on both fronts. The way it anticipates needs and provides solutions has streamlined our workflow tremendously. It's clear that this tool not only supports our goals but actively enhances our team's productivity. I can't imagine our team without it!",
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      image: 'https://tixwibgexlqwgogwyovb.supabase.co/storage/v1/object/public/cv-portfolio/juswa.jpg?t=2024-11-11T12%3A53%3A28.705Z',
     },
   ],
 };
