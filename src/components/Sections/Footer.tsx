@@ -60,7 +60,9 @@ const Footer: FC = memo(() => {
         <div className="footer-socials flex gap-x-4 text-neutral-100">
           <Socials />
         </div>
-        <div className="footer-copyright text-neutral-400">&copy; {currentYear} Andre Salvador. All rights reserved.</div>
+        <div className="footer-copyright text-neutral-400">
+          &copy; {currentYear} Andre Salvador. All rights reserved.
+        </div>
       </div>
     </div>
   );
